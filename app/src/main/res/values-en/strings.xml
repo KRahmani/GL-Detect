@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GL Detect</string>
+    <string name="textAccueil1">A smart, simple and efficient solution for detecting Glaucoma</string>
+    <string name="textAccueil2">RAPID DIAGNOSIS</string>
+    <string name="btCommencer">START</string>
+    <string name="btAproposGL">ABOUT GLAUCOMA</string>
+    <string name="btAproposApp">ABOUT OUR APPLICATION</string>
+    <string name="btTuto">TUTORIAL</string>
+    <string name="appPhoto">CAMERA</string>
+    <string name="galerie">GALERY</string>
+
+</resources>

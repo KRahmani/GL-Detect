@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">GL Detect</string>
+    <string name="textAccueil1">Une solution simple et efficace  pour dépister le glaucome</string>
+    <string name="textAccueil2">DIAGNOSTIC RAPIDE</string>
+    <string name="btCommencer">COMMENCER</string>
+    <string name="btAproposGL">A PROPOS DU GLAUCOME</string>
+    <string name="btAproposApp">A PROPOS DE NOTRE APPLICATION</string>
+    <string name="btTuto">TUTORIEL</string>
+    <string name="appPhoto">Appareil photo</string>
+    <string name="galerie">Galerie</string>
+
 </resources>

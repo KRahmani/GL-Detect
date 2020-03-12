@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.85"
             android:gravity="center"
-            android:text="Une solution simple et efficace  pour dépister le glaucome"
+            android:text="@string/textAccueil1"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="25sp"></TextView>
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1.75"
-            android:text="DIAGNOSTIC RAPIDE"
+            android:text="@string/textAccueil2"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="17sp"></TextView>
@@ -40,7 +40,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1.5"
             android:backgroundTint="#E7A07C"
-            android:text="START"
+            android:text="@string/btCommencer"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:background="@drawable/radius"
@@ -87,7 +87,7 @@
                 android:layout_height="15dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
-                android:text="A PROPOS DU GLAUCOME"
+                android:text="@string/btAproposGL"
                 android:textAlignment="center"
                 android:textColor="#4E2A16"></TextView>
         </LinearLayout>
@@ -129,7 +129,7 @@
                 android:layout_height="15dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
-                android:text="A PROPOS DE NOTRE APPLICATION"
+                android:text="@string/btAproposApp"
                 android:textAlignment="center"
                 android:textColor="#4E2A16"></TextView>
         </LinearLayout>
