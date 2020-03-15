@@ -8,5 +8,6 @@
     <string name="btTuto">TUTORIAL</string>
     <string name="appPhoto">CAMERA</string>
     <string name="galerie">GALERY</string>
-
+    <string name="français">French</string>
+    <string name="anglais">English</string>
 </resources>

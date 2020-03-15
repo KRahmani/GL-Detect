@@ -8,5 +8,7 @@
     <string name="btTuto">TUTORIEL</string>
     <string name="appPhoto">Appareil photo</string>
     <string name="galerie">Galerie</string>
+    <string name="français">Français</string>
+    <string name="anglais">Anglais</string>
 
 </resources>
