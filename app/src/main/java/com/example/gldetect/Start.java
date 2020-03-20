@@ -131,6 +131,10 @@ public class Start extends AppCompatActivity {
         createExternalStoragePublicPicture();
         Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
         startActivity(intent);
+
+
+        //intent = new Intent(this,ChoosePic.class);
+        //startActivity(intent);
     }
     private void openLibrary(){
         //createFolder();
@@ -138,6 +142,9 @@ public class Start extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_PICK,
                 android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivity(intent);
+
+        //intent = new Intent(this,ChoosePic.class);
+        //startActivity(intent);
     }
 
     private void showAlert(final int permisionCode) {
