@@ -10,4 +10,9 @@
     <string name="galerie">GALERY</string>
     <string name="français">French</string>
     <string name="anglais">English</string>
+    <string name="warningTitle">Warning</string>
+    <string name="warning">GL Detect need this access to continue.</string>
+    <string name="cancel">CANCEL</string>
+    <string name="ok">OK</string>
+    <string name="denied">The permission was denied"</string>
 </resources>

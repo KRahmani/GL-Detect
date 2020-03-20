@@ -6,9 +6,15 @@
     <string name="btAproposGL">A PROPOS DU GLAUCOME</string>
     <string name="btAproposApp">A PROPOS DE NOTRE APPLICATION</string>
     <string name="btTuto">TUTORIEL</string>
-    <string name="appPhoto">Appareil photo</string>
-    <string name="galerie">Galerie</string>
+    <string name="appPhoto">APPAREIL PHOTO</string>
+    <string name="galerie">GALERIE</string>
     <string name="français">Français</string>
     <string name="anglais">Anglais</string>
+    <string name="warningTitle">Avertissement</string>
+    <string name="warning">GL Detect a besoin de cet accès pour continuer.</string>
+    <string name="cancel">ANNULER</string>
+    <string name="ok">D\'ACCORD</string>
+    <string name="denied">"La permission a été refusée"</string>
+
 
 </resources>
