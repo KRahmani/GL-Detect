@@ -64,6 +64,7 @@
 
 
         <LinearLayout
+            android:id="@+id/aProposGL"
             android:layout_row="1"
             android:layout_rowWeight="1"
             android:layout_column="0"
@@ -90,6 +91,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/aProposApp"
             android:layout_row="1"
             android:layout_rowWeight="1"
             android:layout_column="1"

@@ -14,6 +14,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private static Locale myLocale;
     private static Button start_btn;
     private static TextView txtAccueil,txtDiagnostic,txtAproposGL,txtAproposApp;
+    private LinearLayout aProposGL, aProposApp;
 
     //Shared Preferences Variables
     private static final String Locale_Preference = "Locale Preference";
@@ -39,10 +41,24 @@ public class MainActivity extends AppCompatActivity {
          txtDiagnostic = (TextView) findViewById(R.id.TVdiagnostic);
          txtAproposGL = (TextView) findViewById(R.id.TVAproposGL);
          txtAproposApp = (TextView) findViewById(R.id.TVAproposApp);
+        aProposGL = (LinearLayout) findViewById(R.id.aProposGL);
+        aProposApp = (LinearLayout) findViewById(R.id.aProposApp);
         final Context context = this;
         start_btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(context,Start.class);
+                startActivity(intent);
+            }
+        });
+        aProposGL.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(context,aProposGL.class);
+                startActivity(intent);
+            }
+        });
+        aProposApp.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(context,aProposApp.class);
                 startActivity(intent);
             }
         });
@@ -104,8 +120,8 @@ public class MainActivity extends AppCompatActivity {
         start_btn.setText(R.string.btCommencer);
         txtAccueil.setText(R.string.textAccueil1);
         txtDiagnostic.setText(R.string.textAccueil2);
-        txtAproposGL.setText(R.string.btAproposApp);
-        txtAproposApp.setText(R.string.btAproposGL);
+        txtAproposApp.setText(R.string.btAproposApp);
+        txtAproposGL.setText(R.string.btAproposGL);
 
     }
 
