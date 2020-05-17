@@ -15,6 +15,12 @@
     <string name="cancel">CANCEL</string>
     <string name="ok">OK</string>
     <string name="denied">The permission was denied"</string>
+    <string name="patientMalade">The patient has Glaucoma</string>
+    <string name="patientNormal">The patient does not have Glaucoma</string>
+    <string name="btClassify">Launch diagnosis</string>
+    <string name="resultat">Result</string>
+    <string name="confidence">Confidence</string>
+
     <string name="txtAproposApp">GL Detect is a mobile app that runs on both IOS and Android systems.
 It has an intuitive interface that makes it easy to use.
 The home page allows you to discover Glaucoma disease, our application and the intelligence behind it.
@@ -24,5 +30,6 @@ Then we can run a diagnosis by taking a picture of the retina (by pairing the ca
 Finally, when we had a good model ready to be used, we used tools to compress it (tensorflow lite and Core ml) in order to load it in a mobile phone and finally use it to detect glaucoma in our application.
 </string>
     <string name="aproposia">About  the AI : </string>
+    <string name="launchdiangnostic">Launch the diagnosis </string>
     <string name="txtAproposGL">Glaucoma is an optical disease that causes an irremediable reduction in the field of vision. It results from the progressive destruction of optical fibres caused by the increase of pressure inside the eye (intraocular pressure).It is the second cause of blindness in the world. A person who suffers from glaucoma can become blind if they do not receive treatment. Therefore, it is very important to detect it at time to treat it.</string>
 </resources>

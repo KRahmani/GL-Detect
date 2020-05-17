@@ -14,7 +14,12 @@
     <string name="warning">GL Detect a besoin de cet accès pour continuer.</string>
     <string name="cancel">ANNULER</string>
     <string name="ok">D\'ACCORD</string>
+    <string name="resultat">Résultat</string>
+    <string name="confidence">Confidence</string>
     <string name="denied">"La permission a été refusée"</string>
+    <string name="patientMalade">Le patient est atteint par le glaucome</string>
+    <string name="patientNormal">Le patient n\'est pas atteint par le glaucome</string>
+    <string name="btClassify">Lancer le diagnostic</string>
 
     <string name="txtAproposGL">Le glaucome est une maladie oculaire qui provoque une diminution irrémédiable du champ de vision. Elle résulte de la destruction progressive des fibres optiques suite à l\’élévation de la pression à l’intérieur de l\'œil (pression intraoculaire). Elle représente la deuxième cause de cécité dans le monde, d\’ailleurs une personne qui en souffre peut devenir aveugle si elle ne reçoit aucun traitement. D\’où l\’importance de la dépister aussitôt que possible pour la traiter.</string>
     <string name="txtAproposApp">GL Detect est une application mobile qui tourne sur les deux systèmes IOS et Android.
@@ -26,4 +31,5 @@ Ensuite on peut lancer un diagnostic en prenant une photo de la rétine (En coup
 Enfin quand on a eu un bon modèle prêt à être utiliser, on a fait appel à des outils permettant de l’alléger (tensorflow lite et Core ml), pour le charger dans un téléphone portable et enfin l’utiliser dans l’application mobile pour détecter le glaucome.
 </string>
     <string name="aproposia">à propos de l\'IA : </string>
+    <string name="launchdiangnostic">Lancer le diagnostic </string>
 </resources>
