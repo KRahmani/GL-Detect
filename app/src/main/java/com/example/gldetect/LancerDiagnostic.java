@@ -1,5 +1,6 @@
 package com.example.gldetect;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,6 +12,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -77,20 +80,6 @@ public class LancerDiagnostic extends AppCompatActivity {
     private TextView label1;
     private TextView Confidence1;
 
-
-    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-toolbar.setNavigationIcon(R.drawable.ic_arrow);
-mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
-
-        @Override
-        public void onClick(View view) {
-
-            // Your code
-            finish();
-        }
-    });
-    }
-
     // priority queue that will hold the top results from the CNN
     private PriorityQueue<Map.Entry<String, Float>> sortedLabels =
             new PriorityQueue<>(
@@ -112,6 +101,10 @@ mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
 
         super.onCreate(savedInstanceState);
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
         //initilize graph and labels
         try{
             tflite = new Interpreter(loadModelFile(), tfliteOptions);
@@ -147,15 +140,7 @@ mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
         // initialize array to hold top probabilities
         topConfidence = new String[RESULTS_TO_SHOW];
 
-        // allows user to go back to activity to select a different image
-        ImageView home_img= (ImageView) findViewById(R.id.home_icn);
-        home_img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(LancerDiagnostic.this, Start.class);
-                startActivity(i);
-            }
-        });
+
 
         // classify current dispalyed image
         classify_button = (Button)findViewById(R.id.classify_image);
@@ -189,6 +174,20 @@ mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 
     // loads tflite grapg from file

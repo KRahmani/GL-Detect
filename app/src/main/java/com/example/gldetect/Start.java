@@ -1,6 +1,7 @@
 package com.example.gldetect;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -20,6 +21,8 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -77,17 +80,16 @@ public class Start extends AppCompatActivity {
                     REQUEST_PERMISSION);
         }
 
-        home_img= (ImageView) findViewById(R.id.home_icn);
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
+
         cam_btn=(LinearLayout)findViewById(R.id.cam_btn);
         lib_btn=(LinearLayout)findViewById(R.id.lib_btn);
         nomModele = "model.tflite";
 
-        home_img.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent intent = new Intent(context,MainActivity.class);
-                startActivity(intent);
-            }
-        });
 
         cam_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,6 +107,19 @@ public class Start extends AppCompatActivity {
             }
         });
 
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 
     // opens camera for user
