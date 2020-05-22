@@ -27,7 +27,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.MediaController;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -84,6 +86,20 @@ public class Start extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+
+        //La vidéo
+        //VideoView videoView =(VideoView)findViewById(R.id.vdVw);
+        VideoView videoView =(VideoView)findViewById(R.id.vdVw);
+        //Set MediaController  to enable play, pause, forward, etc options.
+        MediaController mediaController= new MediaController(this);
+        mediaController.setAnchorView(videoView);
+        //Location of Media File
+        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.gl_detect);
+        //Starting VideView By Setting MediaController and URI
+        videoView.setMediaController(mediaController);
+        videoView.setVideoURI(uri);
+        videoView.requestFocus();
+        videoView.start();
 
 
         cam_btn=(LinearLayout)findViewById(R.id.cam_btn);
